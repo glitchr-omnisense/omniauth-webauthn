@@ -1,0 +1,697 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Cannot access property \$rawId on Webauthn\\PublicKeyCredential\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: PasskeyMethod.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 1
+			path: PasskeyMethod.php
+
+		-
+			message: '#^Instanceof between Webauthn\\PublicKeyCredential and Webauthn\\PublicKeyCredential will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: PasskeyMethod.php
+
+		-
+			message: '#^Parameter \#8 \$timeout of static method Webauthn\\PublicKeyCredentialCreationOptions\:\:create\(\) expects int\<1, max\>\|null, int\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: PasskeyMethod.php
+
+		-
+			message: '#^Parameter \$timeout of static method Webauthn\\PublicKeyCredentialRequestOptions\:\:create\(\) expects int\<1, max\>\|null, int\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: PasskeyMethod.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 1
+			path: PasskeyRecord.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 6
+			path: PasskeyRecord.php
+
+		-
+			message: '#^Parameter \#10 \$otherUI of class Omniauth\\Passkey\\PasskeyRecord constructor expects array\<string, mixed\>\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: PasskeyRecord.php
+
+		-
+			message: '#^Parameter \#3 \$transports of class Omniauth\\Passkey\\PasskeyRecord constructor expects list\<string\>, list\<mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: PasskeyRecord.php
+
+		-
+			message: '#^Parameter \#5 \$trustPath of class Omniauth\\Passkey\\PasskeyRecord constructor expects array\<string, mixed\>, array\<mixed, mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: PasskeyRecord.php
+
+		-
+			message: '#^Binary operation "\." between string and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Cannot access offset ''curve_name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Cannot access offset ''ec'' on array\|false\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Cannot access offset ''id'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Cannot access offset ''x'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Cannot access offset ''y'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Match expression does not handle remaining value\: true$#'
+			identifier: match.unhandled
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:bytes\(\) return type with generic class ArrayObject does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:clientData\(\) should return string but returns string\|false\.$#'
+			identifier: return.type
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:options\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:options\(\) should return array but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:privateKey\(\) should return string but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Parameter \#1 \$base64url of static method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:decode\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Parameter \#1 \$bytes of static method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:encode\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Parameter \#1 \$rpId of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:authenticatorData\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Parameter \#1 \$string of function str_pad expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Parameter \#1 \$string of function strlen expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Parameter \#2 \$challenge of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:clientData\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: Testing/SoftwareAuthenticator.php
+
+		-
+			message: '#^Cannot access offset ''account'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Cannot access offset ''eager'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Cannot access offset ''failure'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Cannot access offset ''files'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Cannot access offset ''offered'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Cannot access offset ''passed'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Cannot access offset ''reason'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Cannot access offset ''status'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 4
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Cannot access offset ''symbols'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 3
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:foreign\(\) has parameter \$symbols with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:foreign\(\) should return list\<string\> but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:outside\(\) has parameter \$eager with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:outside\(\) has parameter \$files with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:outside\(\) should return list\<string\> but returns list\<mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:php\(\) has parameter \$arguments with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:php\(\) should return array\<string, mixed\> but returns array\<mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Parameter \#1 \$array of function array_values expects array, array\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Parameter \#1 \$callback of function array_map expects \(callable\(mixed\)\: mixed\)\|null, ''dirname'' given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Parameter \#1 \$command of function proc_open expects list\<string\>\|string, non\-empty\-array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Parameter \#1 \$files of static method Omniauth\\Passkey\\Tests\\BareTest\:\:outside\(\) expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 3
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Parameter \#1 \$symbols of static method Omniauth\\Passkey\\Tests\\BareTest\:\:foreign\(\) expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 3
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Parameter \#2 \$callback of function array_filter expects \(callable\(mixed\)\: bool\)\|null, Closure\(string\|null\)\: bool given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Parameter \#2 \$eager of static method Omniauth\\Passkey\\Tests\\BareTest\:\:outside\(\) expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 3
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Parameter \#2 \$haystack of static method PHPUnit\\Framework\\Assert\:\:assertContains\(\) expects iterable, mixed given\.$#'
+			identifier: argument.type
+			count: 5
+			path: Tests/BareTest.php
+
+		-
+			message: '#^Cannot call method toRow\(\) on Omniauth\\Passkey\\PasskeyRecord\|null\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Tests\\BundleCompatibilityTest\:\:bundleRecord\(\) has parameter \$row with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Tests\\BundleCompatibilityTest\:\:bundleRow\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Tests\\BundleCompatibilityTest\:\:normalized\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Tests\\BundleCompatibilityTest\:\:normalized\(\) should return array but returns array\<mixed\>\|ArrayObject\<\(int\|string\), mixed\>\|bool\|float\|int\|string\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Method Omniauth\\Passkey\\Tests\\BundleCompatibilityTest\:\:serializer\(\) should return Symfony\\Component\\Serializer\\Serializer but returns Symfony\\Component\\Serializer\\SerializerInterface\.$#'
+			identifier: return.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:create\(\) expects array\<string, mixed\>\|string, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Parameter \#1 \$publicKeyCredentialId of static method Webauthn\\CredentialRecord\:\:create\(\) expects string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Parameter \#10 \$otherUI of static method Webauthn\\CredentialRecord\:\:create\(\) expects array\<string, mixed\>\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Parameter \#2 \$type of static method Webauthn\\CredentialRecord\:\:create\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Parameter \#3 \$transports of static method Webauthn\\CredentialRecord\:\:create\(\) expects array\<string\>, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Parameter \#4 \$attestationType of static method Webauthn\\CredentialRecord\:\:create\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Parameter \#5 \$trustPath of static method Webauthn\\CredentialRecord\:\:create\(\) expects Webauthn\\TrustPath\\TrustPath, Webauthn\\TrustPath\\TrustPath\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Parameter \#6 \$aaguid of static method Webauthn\\CredentialRecord\:\:create\(\) expects Symfony\\Component\\Uid\\Uuid, Symfony\\Component\\Uid\\Uuid\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Parameter \#7 \$credentialPublicKey of static method Webauthn\\CredentialRecord\:\:create\(\) expects string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Parameter \#8 \$userHandle of static method Webauthn\\CredentialRecord\:\:create\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/BundleCompatibilityTest.php
+
+		-
+			message: '#^Offset 1 might not exist on array\{\}\|array\{non\-falsy\-string, string\}\.$#'
+			identifier: offsetAccess.notFound
+			count: 2
+			path: Tests/DocsTest.php
+
+		-
+			message: '#^Parameter \#1 \$process of function proc_close expects resource, resource\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/DocsTest.php
+
+		-
+			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:create\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/Fixtures/Kit.php
+
+		-
+			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/Fixtures/Kit.php
+
+		-
+			message: '#^Access to an undefined property object\:\:\$identifier\.$#'
+			identifier: property.notFound
+			count: 1
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Cannot access offset ''again'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Cannot access offset ''counter'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Cannot access offset ''forged'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Cannot access offset ''loaded'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Cannot access offset ''passkey'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Cannot access offset ''password'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Cannot access offset ''registration'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Cannot access property \$counter on Omniauth\\Passkey\\PasskeyRecord\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Parameter \#1 \$array of function array_values expects array\<T\>, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Parameter \#1 \$callback of function array_map expects \(callable\(mixed\)\: mixed\)\|null, ''realpath'' given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:create\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
+			identifier: argument.type
+			count: 2
+			path: Tests/Fixtures/bare.php
+
+		-
+			message: '#^Cannot call method getExtension\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: Tests/Fixtures/load-all.php
+
+		-
+			message: '#^Cannot call method getPathname\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: Tests/Fixtures/load-all.php
+
+		-
+			message: '#^Parameter \#1 \$array of function array_values expects array\<T\>, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/Fixtures/load-all.php
+
+		-
+			message: '#^Parameter \#1 \$callback of function array_map expects \(callable\(mixed\)\: mixed\)\|null, ''realpath'' given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/Fixtures/load-all.php
+
+		-
+			message: '#^Parameter \#1 \$directory of class RecursiveDirectoryIterator constructor expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/Fixtures/load-all.php
+
+		-
+			message: '#^Parameter \#1 \$string of function strlen expects string, string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/Fixtures/load-all.php
+
+		-
+			message: '#^Parameter \#1 \$string of function substr expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/Fixtures/load-all.php
+
+		-
+			message: '#^Cannot access offset ''allowCredentials'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access offset ''attestation'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access offset ''authenticatorSelection'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access offset ''challenge'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 4
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access offset ''displayName'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access offset ''excludeCredentials'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 2
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access offset ''id'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access offset ''name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access offset ''pubKeyCredParams'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access offset ''rp'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access offset ''rpId'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 3
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access offset ''user'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 3
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access offset ''userVerification'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access property \$backupEligible on Omniauth\\Passkey\\PasskeyRecord\|null\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access property \$backupStatus on Omniauth\\Passkey\\PasskeyRecord\|null\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Cannot access property \$counter on Omniauth\\Passkey\\PasskeyRecord\|null\.$#'
+			identifier: property.nonObject
+			count: 3
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Parameter \#1 \$array of function array_keys expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Parameter \#1 \$base64url of static method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:decode\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Parameter \#1 \$json of function json_decode expects string, string\|null given\.$#'
+			identifier: argument.type
+			count: 6
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/PasskeyMethodTest.php
+
+		-
+			message: '#^Parameter \#2 \$string of static method PHPUnit\\Framework\\Assert\:\:assertMatchesRegularExpression\(\) expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: Tests/PasskeyMethodTest.php
