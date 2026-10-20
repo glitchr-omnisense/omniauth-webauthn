@@ -1,0 +1,48 @@
+{
+    "name": "omniauth/passkey",
+    "type": "library",
+    "description": "Omniauth's passkeys over web-auth/webauthn-lib, under any PHP host: the sign-in (request options, then the assertion checked: origin, relying party, user verification required, counter and backup flags kept) and the registration (creation options, then the attestation checked), on the credential record as omnibase's userPasskey table holds it - the 13 fields of WebAuthn's CredentialRecord, in their base64 text - so a passkey registered by web-auth/webauthn-symfony-bundle signs in here and one registered here is read by the bundle. A software authenticator (P-256) signs real assertions in tests.",
+    "keywords": ["authentication", "sign-in", "passkey", "webauthn", "fido2", "framework-agnostic", "omniauth"],
+    "homepage": "https://github.com/glitchr-studio/omniauth-passkey",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "ext-openssl": "*",
+        "omniscient/omniauth": "^1.0@dev",
+        "symfony/serializer": "^6.4|^7.0|^8.0",
+        "symfony/uid": "^6.4|^7.0|^8.0",
+        "web-auth/webauthn-lib": "^5.3"
+    },
+    "require-dev": {
+        "doctrine/dbal": "^4.0",
+        "phpunit/phpunit": "^11.0",
+        "web-auth/webauthn-symfony-bundle": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omniauth\\Passkey\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omniauth\\Passkey\\Tests\\": "Tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-1.x": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
