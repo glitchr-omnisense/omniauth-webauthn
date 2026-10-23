@@ -6,17 +6,17 @@ order: 1
 # Installation, in plain PHP
 
 ```sh
-composer require omniscient/omniauth omniauth/passkey
+composer require omniscient/omniauth omniauth/webauthn
 ```
 
 It requires omniscient/omniauth and web-auth/webauthn-lib (framework-free: its CBOR, COSE and PKI
 libraries, and the standalone Symfony components it is written on - serializer, property-info,
 uid, clock). No bundle, no framework: the passkeys stay in your table, behind
-`Omniauth\Passkey\Contract\Passkeys`, as `PasskeyRecord` values - the 13 fields of WebAuthn's
+`Omniauth\WebAuthn\Contract\Passkeys`, as `PasskeyRecord` values - the 13 fields of WebAuthn's
 credential record, as omnibase's `userPasskey` table holds them.
 
 The whole thing by hand - the in-memory stores of `Omniauth\Testing` stand in for yours, and
-`Omniauth\Passkey\Testing\SoftwareAuthenticator` for the person's browser and device:
+`Omniauth\WebAuthn\Testing\SoftwareAuthenticator` for the person's browser and device:
 
 ```php
 <?php
@@ -28,10 +28,10 @@ use Omniauth\Context;
 use Omniauth\Factor;
 use Omniauth\Method\Methods;
 use Omniauth\Omniauth;
-use Omniauth\Passkey\PasskeyMethod;
-use Omniauth\Passkey\RelyingParty;
-use Omniauth\Passkey\Testing\InMemoryPasskeys;
-use Omniauth\Passkey\Testing\SoftwareAuthenticator;
+use Omniauth\WebAuthn\PasskeyMethod;
+use Omniauth\WebAuthn\RelyingParty;
+use Omniauth\WebAuthn\Testing\InMemoryPasskeys;
+use Omniauth\WebAuthn\Testing\SoftwareAuthenticator;
 use Omniauth\Testing\InMemoryStore;
 use Omniauth\Testing\TestAccount;
 

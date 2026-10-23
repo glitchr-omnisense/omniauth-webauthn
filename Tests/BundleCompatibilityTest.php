@@ -1,13 +1,13 @@
 <?php
 
-namespace Omniauth\Passkey\Tests;
+namespace Omniauth\WebAuthn\Tests;
 
 use Doctrine\DBAL\Platforms\MySQL80Platform;
 use Doctrine\DBAL\Types\BooleanType;
 use Doctrine\DBAL\Types\JsonType;
-use Omniauth\Passkey\PasskeyRecord;
-use Omniauth\Passkey\Testing\SoftwareAuthenticator;
-use Omniauth\Passkey\Tests\Fixtures\Kit;
+use Omniauth\WebAuthn\PasskeyRecord;
+use Omniauth\WebAuthn\Testing\SoftwareAuthenticator;
+use Omniauth\WebAuthn\Tests\Fixtures\Kit;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer;
 use Symfony\Component\Uid\Uuid;

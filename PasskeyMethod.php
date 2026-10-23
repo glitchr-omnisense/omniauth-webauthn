@@ -1,6 +1,6 @@
 <?php
 
-namespace Omniauth\Passkey;
+namespace Omniauth\WebAuthn;
 
 use Omniauth\Attempt;
 use Omniauth\Context;
@@ -12,8 +12,8 @@ use Omniauth\Method\Challenge;
 use Omniauth\Method\Challenging;
 use Omniauth\Method\Enrolling;
 use Omniauth\Method\Verdict;
-use Omniauth\Passkey\Contract\Passkeys;
 use Omniauth\Proof;
+use Omniauth\WebAuthn\Contract\Passkeys;
 use Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer;
 use Symfony\Component\Serializer\SerializerInterface;
 use Webauthn\AttestationStatement\AttestationStatementSupportManager;

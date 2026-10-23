@@ -1,7 +1,7 @@
 <?php
 
 /*
- * omniauth/passkey in plain PHP: no bundle, no container, no framework. The
+ * omniauth/webauthn in plain PHP: no bundle, no container, no framework. The
  * conductor built by hand on the in-memory stores; an account registers a
  * passkey from its settings (a software authenticator in the browser's
  * place), then signs in with it - no second factor, though a password asks
@@ -16,15 +16,15 @@ use Omniauth\EmailCode\EmailCodeMethod;
 use Omniauth\Factor;
 use Omniauth\Method\Methods;
 use Omniauth\Omniauth;
-use Omniauth\Passkey\PasskeyMethod;
-use Omniauth\Passkey\RelyingParty;
-use Omniauth\Passkey\Testing\InMemoryPasskeys;
-use Omniauth\Passkey\Testing\SoftwareAuthenticator;
 use Omniauth\Password\PasswordMethod;
 use Omniauth\Result;
 use Omniauth\Testing\InMemoryStore;
 use Omniauth\Testing\RecordingSender;
 use Omniauth\Testing\TestAccount;
+use Omniauth\WebAuthn\PasskeyMethod;
+use Omniauth\WebAuthn\RelyingParty;
+use Omniauth\WebAuthn\Testing\InMemoryPasskeys;
+use Omniauth\WebAuthn\Testing\SoftwareAuthenticator;
 use Symfony\Component\PasswordHasher\Hasher\NativePasswordHasher;
 
 require $autoload = $argv[1];

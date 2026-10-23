@@ -1,15 +1,15 @@
 <?php
 
-namespace Omniauth\Passkey\Tests;
+namespace Omniauth\WebAuthn\Tests;
 
 use Omniauth\Context;
 use Omniauth\Factor;
 use Omniauth\Failure;
-use Omniauth\Passkey\PasskeyRecord;
-use Omniauth\Passkey\RelyingParty;
-use Omniauth\Passkey\Testing\SoftwareAuthenticator;
-use Omniauth\Passkey\Tests\Fixtures\Kit;
 use Omniauth\Status;
+use Omniauth\WebAuthn\PasskeyRecord;
+use Omniauth\WebAuthn\RelyingParty;
+use Omniauth\WebAuthn\Testing\SoftwareAuthenticator;
+use Omniauth\WebAuthn\Tests\Fixtures\Kit;
 use PHPUnit\Framework\TestCase;
 
 /**

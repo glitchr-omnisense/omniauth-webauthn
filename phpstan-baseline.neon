@@ -43,19 +43,19 @@ parameters:
 			path: PasskeyRecord.php
 
 		-
-			message: '#^Parameter \#10 \$otherUI of class Omniauth\\Passkey\\PasskeyRecord constructor expects array\<string, mixed\>\|null, mixed given\.$#'
+			message: '#^Parameter \#10 \$otherUI of class Omniauth\\WebAuthn\\PasskeyRecord constructor expects array\<string, mixed\>\|null, mixed given\.$#'
 			identifier: argument.type
 			count: 1
 			path: PasskeyRecord.php
 
 		-
-			message: '#^Parameter \#3 \$transports of class Omniauth\\Passkey\\PasskeyRecord constructor expects list\<string\>, list\<mixed\> given\.$#'
+			message: '#^Parameter \#3 \$transports of class Omniauth\\WebAuthn\\PasskeyRecord constructor expects list\<string\>, list\<mixed\> given\.$#'
 			identifier: argument.type
 			count: 1
 			path: PasskeyRecord.php
 
 		-
-			message: '#^Parameter \#5 \$trustPath of class Omniauth\\Passkey\\PasskeyRecord constructor expects array\<string, mixed\>, array\<mixed, mixed\> given\.$#'
+			message: '#^Parameter \#5 \$trustPath of class Omniauth\\WebAuthn\\PasskeyRecord constructor expects array\<string, mixed\>, array\<mixed, mixed\> given\.$#'
 			identifier: argument.type
 			count: 1
 			path: PasskeyRecord.php
@@ -103,49 +103,49 @@ parameters:
 			path: Testing/SoftwareAuthenticator.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:bytes\(\) return type with generic class ArrayObject does not specify its types\: TKey, TValue$#'
+			message: '#^Method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:bytes\(\) return type with generic class ArrayObject does not specify its types\: TKey, TValue$#'
 			identifier: missingType.generics
 			count: 1
 			path: Testing/SoftwareAuthenticator.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:clientData\(\) should return string but returns string\|false\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:clientData\(\) should return string but returns string\|false\.$#'
 			identifier: return.type
 			count: 1
 			path: Testing/SoftwareAuthenticator.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:options\(\) return type has no value type specified in iterable type array\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:options\(\) return type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
 			path: Testing/SoftwareAuthenticator.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:options\(\) should return array but returns mixed\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:options\(\) should return array but returns mixed\.$#'
 			identifier: return.type
 			count: 1
 			path: Testing/SoftwareAuthenticator.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:privateKey\(\) should return string but returns mixed\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:privateKey\(\) should return string but returns mixed\.$#'
 			identifier: return.type
 			count: 1
 			path: Testing/SoftwareAuthenticator.php
 
 		-
-			message: '#^Parameter \#1 \$base64url of static method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:decode\(\) expects string, mixed given\.$#'
+			message: '#^Parameter \#1 \$base64url of static method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:decode\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
 			path: Testing/SoftwareAuthenticator.php
 
 		-
-			message: '#^Parameter \#1 \$bytes of static method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:encode\(\) expects string, mixed given\.$#'
+			message: '#^Parameter \#1 \$bytes of static method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:encode\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
 			path: Testing/SoftwareAuthenticator.php
 
 		-
-			message: '#^Parameter \#1 \$rpId of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:authenticatorData\(\) expects string, mixed given\.$#'
+			message: '#^Parameter \#1 \$rpId of method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:authenticatorData\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 2
 			path: Testing/SoftwareAuthenticator.php
@@ -163,7 +163,7 @@ parameters:
 			path: Testing/SoftwareAuthenticator.php
 
 		-
-			message: '#^Parameter \#2 \$challenge of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:clientData\(\) expects string, mixed given\.$#'
+			message: '#^Parameter \#2 \$challenge of method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:clientData\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 2
 			path: Testing/SoftwareAuthenticator.php
@@ -223,43 +223,43 @@ parameters:
 			path: Tests/BareTest.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:foreign\(\) has parameter \$symbols with no value type specified in iterable type array\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Tests\\BareTest\:\:foreign\(\) has parameter \$symbols with no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
 			path: Tests/BareTest.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:foreign\(\) should return list\<string\> but returns mixed\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Tests\\BareTest\:\:foreign\(\) should return list\<string\> but returns mixed\.$#'
 			identifier: return.type
 			count: 1
 			path: Tests/BareTest.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:outside\(\) has parameter \$eager with no value type specified in iterable type array\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Tests\\BareTest\:\:outside\(\) has parameter \$eager with no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
 			path: Tests/BareTest.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:outside\(\) has parameter \$files with no value type specified in iterable type array\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Tests\\BareTest\:\:outside\(\) has parameter \$files with no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
 			path: Tests/BareTest.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:outside\(\) should return list\<string\> but returns list\<mixed\>\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Tests\\BareTest\:\:outside\(\) should return list\<string\> but returns list\<mixed\>\.$#'
 			identifier: return.type
 			count: 1
 			path: Tests/BareTest.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:php\(\) has parameter \$arguments with no value type specified in iterable type array\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Tests\\BareTest\:\:php\(\) has parameter \$arguments with no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
 			path: Tests/BareTest.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Tests\\BareTest\:\:php\(\) should return array\<string, mixed\> but returns array\<mixed\>\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Tests\\BareTest\:\:php\(\) should return array\<string, mixed\> but returns array\<mixed\>\.$#'
 			identifier: return.type
 			count: 1
 			path: Tests/BareTest.php
@@ -283,13 +283,13 @@ parameters:
 			path: Tests/BareTest.php
 
 		-
-			message: '#^Parameter \#1 \$files of static method Omniauth\\Passkey\\Tests\\BareTest\:\:outside\(\) expects array, mixed given\.$#'
+			message: '#^Parameter \#1 \$files of static method Omniauth\\WebAuthn\\Tests\\BareTest\:\:outside\(\) expects array, mixed given\.$#'
 			identifier: argument.type
 			count: 3
 			path: Tests/BareTest.php
 
 		-
-			message: '#^Parameter \#1 \$symbols of static method Omniauth\\Passkey\\Tests\\BareTest\:\:foreign\(\) expects array, mixed given\.$#'
+			message: '#^Parameter \#1 \$symbols of static method Omniauth\\WebAuthn\\Tests\\BareTest\:\:foreign\(\) expects array, mixed given\.$#'
 			identifier: argument.type
 			count: 3
 			path: Tests/BareTest.php
@@ -301,7 +301,7 @@ parameters:
 			path: Tests/BareTest.php
 
 		-
-			message: '#^Parameter \#2 \$eager of static method Omniauth\\Passkey\\Tests\\BareTest\:\:outside\(\) expects array, mixed given\.$#'
+			message: '#^Parameter \#2 \$eager of static method Omniauth\\WebAuthn\\Tests\\BareTest\:\:outside\(\) expects array, mixed given\.$#'
 			identifier: argument.type
 			count: 3
 			path: Tests/BareTest.php
@@ -313,7 +313,7 @@ parameters:
 			path: Tests/BareTest.php
 
 		-
-			message: '#^Cannot call method toRow\(\) on Omniauth\\Passkey\\PasskeyRecord\|null\.$#'
+			message: '#^Cannot call method toRow\(\) on Omniauth\\WebAuthn\\PasskeyRecord\|null\.$#'
 			identifier: method.nonObject
 			count: 2
 			path: Tests/BundleCompatibilityTest.php
@@ -325,43 +325,43 @@ parameters:
 			path: Tests/BundleCompatibilityTest.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Tests\\BundleCompatibilityTest\:\:bundleRecord\(\) has parameter \$row with no value type specified in iterable type array\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Tests\\BundleCompatibilityTest\:\:bundleRecord\(\) has parameter \$row with no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
 			path: Tests/BundleCompatibilityTest.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Tests\\BundleCompatibilityTest\:\:bundleRow\(\) return type has no value type specified in iterable type array\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Tests\\BundleCompatibilityTest\:\:bundleRow\(\) return type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
 			path: Tests/BundleCompatibilityTest.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Tests\\BundleCompatibilityTest\:\:normalized\(\) return type has no value type specified in iterable type array\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Tests\\BundleCompatibilityTest\:\:normalized\(\) return type has no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
 			path: Tests/BundleCompatibilityTest.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Tests\\BundleCompatibilityTest\:\:normalized\(\) should return array but returns array\<mixed\>\|ArrayObject\<\(int\|string\), mixed\>\|bool\|float\|int\|string\|null\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Tests\\BundleCompatibilityTest\:\:normalized\(\) should return array but returns array\<mixed\>\|ArrayObject\<\(int\|string\), mixed\>\|bool\|float\|int\|string\|null\.$#'
 			identifier: return.type
 			count: 1
 			path: Tests/BundleCompatibilityTest.php
 
 		-
-			message: '#^Method Omniauth\\Passkey\\Tests\\BundleCompatibilityTest\:\:serializer\(\) should return Symfony\\Component\\Serializer\\Serializer but returns Symfony\\Component\\Serializer\\SerializerInterface\.$#'
+			message: '#^Method Omniauth\\WebAuthn\\Tests\\BundleCompatibilityTest\:\:serializer\(\) should return Symfony\\Component\\Serializer\\Serializer but returns Symfony\\Component\\Serializer\\SerializerInterface\.$#'
 			identifier: return.type
 			count: 1
 			path: Tests/BundleCompatibilityTest.php
 
 		-
-			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:create\(\) expects array\<string, mixed\>\|string, array given\.$#'
+			message: '#^Parameter \#1 \$options of method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:create\(\) expects array\<string, mixed\>\|string, array given\.$#'
 			identifier: argument.type
 			count: 1
 			path: Tests/BundleCompatibilityTest.php
 
 		-
-			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, array given\.$#'
+			message: '#^Parameter \#1 \$options of method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, array given\.$#'
 			identifier: argument.type
 			count: 1
 			path: Tests/BundleCompatibilityTest.php
@@ -433,13 +433,13 @@ parameters:
 			path: Tests/DocsTest.php
 
 		-
-			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:create\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
+			message: '#^Parameter \#1 \$options of method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:create\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: Tests/Fixtures/Kit.php
 
 		-
-			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
+			message: '#^Parameter \#1 \$options of method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: Tests/Fixtures/Kit.php
@@ -493,7 +493,7 @@ parameters:
 			path: Tests/Fixtures/bare.php
 
 		-
-			message: '#^Cannot access property \$counter on Omniauth\\Passkey\\PasskeyRecord\|null\.$#'
+			message: '#^Cannot access property \$counter on Omniauth\\WebAuthn\\PasskeyRecord\|null\.$#'
 			identifier: property.nonObject
 			count: 1
 			path: Tests/Fixtures/bare.php
@@ -511,13 +511,13 @@ parameters:
 			path: Tests/Fixtures/bare.php
 
 		-
-			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:create\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
+			message: '#^Parameter \#1 \$options of method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:create\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: Tests/Fixtures/bare.php
 
 		-
-			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
+			message: '#^Parameter \#1 \$options of method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
 			identifier: argument.type
 			count: 2
 			path: Tests/Fixtures/bare.php
@@ -643,19 +643,19 @@ parameters:
 			path: Tests/PasskeyMethodTest.php
 
 		-
-			message: '#^Cannot access property \$backupEligible on Omniauth\\Passkey\\PasskeyRecord\|null\.$#'
+			message: '#^Cannot access property \$backupEligible on Omniauth\\WebAuthn\\PasskeyRecord\|null\.$#'
 			identifier: property.nonObject
 			count: 2
 			path: Tests/PasskeyMethodTest.php
 
 		-
-			message: '#^Cannot access property \$backupStatus on Omniauth\\Passkey\\PasskeyRecord\|null\.$#'
+			message: '#^Cannot access property \$backupStatus on Omniauth\\WebAuthn\\PasskeyRecord\|null\.$#'
 			identifier: property.nonObject
 			count: 2
 			path: Tests/PasskeyMethodTest.php
 
 		-
-			message: '#^Cannot access property \$counter on Omniauth\\Passkey\\PasskeyRecord\|null\.$#'
+			message: '#^Cannot access property \$counter on Omniauth\\WebAuthn\\PasskeyRecord\|null\.$#'
 			identifier: property.nonObject
 			count: 3
 			path: Tests/PasskeyMethodTest.php
@@ -667,7 +667,7 @@ parameters:
 			path: Tests/PasskeyMethodTest.php
 
 		-
-			message: '#^Parameter \#1 \$base64url of static method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:decode\(\) expects string, mixed given\.$#'
+			message: '#^Parameter \#1 \$base64url of static method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:decode\(\) expects string, mixed given\.$#'
 			identifier: argument.type
 			count: 2
 			path: Tests/PasskeyMethodTest.php
@@ -679,13 +679,13 @@ parameters:
 			path: Tests/PasskeyMethodTest.php
 
 		-
-			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, mixed given\.$#'
+			message: '#^Parameter \#1 \$options of method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, mixed given\.$#'
 			identifier: argument.type
 			count: 1
 			path: Tests/PasskeyMethodTest.php
 
 		-
-			message: '#^Parameter \#1 \$options of method Omniauth\\Passkey\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
+			message: '#^Parameter \#1 \$options of method Omniauth\\WebAuthn\\Testing\\SoftwareAuthenticator\:\:get\(\) expects array\<string, mixed\>\|string, string\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: Tests/PasskeyMethodTest.php

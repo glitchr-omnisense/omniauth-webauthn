@@ -1,6 +1,6 @@
 <?php
 
-namespace Omniauth\Passkey\Tests\Fixtures;
+namespace Omniauth\WebAuthn\Tests\Fixtures;
 
 use Omniauth\ArrayState;
 use Omniauth\CacheThrottle;
@@ -8,16 +8,16 @@ use Omniauth\Context;
 use Omniauth\EmailCode\EmailCodeMethod;
 use Omniauth\Method\Methods;
 use Omniauth\Omniauth;
-use Omniauth\Passkey\PasskeyMethod;
-use Omniauth\Passkey\RelyingParty;
-use Omniauth\Passkey\Testing\InMemoryPasskeys;
-use Omniauth\Passkey\Testing\SoftwareAuthenticator;
 use Omniauth\Password\PasswordMethod;
 use Omniauth\Testing\ArrayCache;
 use Omniauth\Testing\FixedClock;
 use Omniauth\Testing\InMemoryStore;
 use Omniauth\Testing\RecordingSender;
 use Omniauth\Testing\TestAccount;
+use Omniauth\WebAuthn\PasskeyMethod;
+use Omniauth\WebAuthn\RelyingParty;
+use Omniauth\WebAuthn\Testing\InMemoryPasskeys;
+use Omniauth\WebAuthn\Testing\SoftwareAuthenticator;
 use Symfony\Component\PasswordHasher\Hasher\NativePasswordHasher;
 
 /**

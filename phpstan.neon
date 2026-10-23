@@ -10,4 +10,6 @@ parameters:
         - .
     excludePaths:
         - vendor
+        # The former Omniauth\Passkey\ names, aliases for one release.
+        - Legacy
     reportUnmatchedIgnoredErrors: false

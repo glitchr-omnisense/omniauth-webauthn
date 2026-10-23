@@ -1,6 +1,6 @@
 <?php
 
-namespace Omniauth\Passkey\Testing;
+namespace Omniauth\WebAuthn\Testing;
 
 /**
  * A passkey authenticator in PHP, for tests (the one lesringostars' sign-in

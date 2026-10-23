@@ -8,7 +8,7 @@ order: 2
 ```php
 new PasskeyMethod(
     accounts: $accounts,                 // Omniauth\Contract\Accounts
-    passkeys: $passkeys,                 // Omniauth\Passkey\Contract\Passkeys
+    passkeys: $passkeys,                 // Omniauth\WebAuthn\Contract\Passkeys
     rp: new RelyingParty(
         id: 'example.org',               // RELYING_PARTY_ID; null: each request's host
         name: 'Les Ringo Stars',         // what some authenticators show; null: the id

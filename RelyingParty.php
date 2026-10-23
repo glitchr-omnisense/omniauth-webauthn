@@ -1,6 +1,6 @@
 <?php
 
-namespace Omniauth\Passkey;
+namespace Omniauth\WebAuthn;
 
 use Omniauth\Context;
 

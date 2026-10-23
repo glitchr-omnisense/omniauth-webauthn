@@ -1,6 +1,6 @@
-# omniauth/passkey
+# omniauth/webauthn
 
-Passkeys for [omniscient/omniauth](https://github.com/glitchr-studio/omniauth), **under any PHP
+WebAuthn - passkeys - for [omniscient/omniauth](https://github.com/glitchr-studio/omniauth), **under any PHP
 host**, over web-auth/webauthn-lib: the sign-in (request options, then the assertion checked) and
 the registration from an account's settings (creation options, then the attestation checked), on
 the credential record as omnibase's `userPasskey` table holds it - so a passkey registered by
@@ -9,7 +9,7 @@ web-auth/webauthn-symfony-bundle signs in here, and one registered here is read 
 ```php
 use Omniauth\{ArrayState, Context, Factor, Omniauth};
 use Omniauth\Method\Methods;
-use Omniauth\Passkey\{PasskeyMethod, RelyingParty};
+use Omniauth\WebAuthn\{PasskeyMethod, RelyingParty};
 
 $omniauth = new Omniauth(
     accounts: $accounts,                                   // your accounts, behind Omniauth\Contract\Accounts
@@ -82,10 +82,25 @@ whose text omnibase's own types reproduce since AU1. `PasskeyRecord` keeps that 
 reads a row the bundle wrote, `toRow()` writes the row the bundle reads. `Tests/BundleCompatibilityTest`
 proves it both ways - see "Verified".
 
+## Formerly omniauth/passkey
+
+This package was **omniauth/passkey** until 2026-10-23 (renamed: it implements WebAuthn, and
+passkeys are one use of it), with its history. It `replace`s omniauth/passkey, so the two are never
+installed together, and the former namespace `Omniauth\Passkey\` stays an alias of
+`Omniauth\WebAuthn\` for one release (`Legacy/`: each former name loads the new class, with a
+deprecation notice): code written against the former names goes on working until the next release.
+The class names (`PasskeyMethod`, `PasskeyRecord`, `Contract\Passkeys`...), the method's name
+(`'passkey'`, `Factor::Passkey`), the JSON, the routes a host gives it and the stored records do not
+change; the word "passkey" stays what a person reads.
+
+```sh
+composer remove omniauth/passkey && composer require omniauth/webauthn
+```
+
 ## Documentation
 
 - [Installation, in plain PHP](docs/installation.md)
-- [The method](docs/passkey.md)
+- [The method](docs/webauthn.md)
 - [The records and the bundle](docs/records.md)
 
 ## Verified, and not

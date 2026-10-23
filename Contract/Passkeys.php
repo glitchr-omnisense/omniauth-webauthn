@@ -1,8 +1,8 @@
 <?php
 
-namespace Omniauth\Passkey\Contract;
+namespace Omniauth\WebAuthn\Contract;
 
-use Omniauth\Passkey\PasskeyRecord;
+use Omniauth\WebAuthn\PasskeyRecord;
 
 /**
  * The passkeys of the application's accounts (omnibase: the userPasskey

@@ -1,9 +1,9 @@
 {
-    "name": "omniauth/passkey",
+    "name": "omniauth/webauthn",
     "type": "library",
-    "description": "Omniauth's passkeys over web-auth/webauthn-lib, under any PHP host: the sign-in (request options, then the assertion checked: origin, relying party, user verification required, counter and backup flags kept) and the registration (creation options, then the attestation checked), on the credential record as omnibase's userPasskey table holds it - the 13 fields of WebAuthn's CredentialRecord, in their base64 text - so a passkey registered by web-auth/webauthn-symfony-bundle signs in here and one registered here is read by the bundle. A software authenticator (P-256) signs real assertions in tests.",
+    "description": "Omniauth's WebAuthn over web-auth/webauthn-lib, under any PHP host - passkeys: the sign-in (request options, then the assertion checked: origin, relying party, user verification required, counter and backup flags kept) and the registration (creation options, then the attestation checked), on the credential record as omnibase's userPasskey table holds it - the 13 fields of WebAuthn's CredentialRecord, in their base64 text - so a passkey registered by web-auth/webauthn-symfony-bundle signs in here and one registered here is read by the bundle. A software authenticator (P-256) signs real assertions in tests. Formerly omniauth/passkey, which it replaces (the Omniauth\\Passkey\\ names stay aliases for one release).",
     "keywords": ["authentication", "sign-in", "passkey", "webauthn", "fido2", "framework-agnostic", "omniauth"],
-    "homepage": "https://github.com/glitchr-studio/omniauth-passkey",
+    "homepage": "https://github.com/glitchr-studio/omniauth-webauthn",
     "license": "MIT",
     "authors": [
         {
@@ -24,17 +24,22 @@
         "phpunit/phpunit": "^11.0",
         "web-auth/webauthn-symfony-bundle": "^5.3"
     },
+    "replace": {
+        "omniauth/passkey": "self.version"
+    },
     "autoload": {
         "psr-4": {
-            "Omniauth\\Passkey\\": ""
+            "Omniauth\\WebAuthn\\": "",
+            "Omniauth\\Passkey\\": "Legacy/"
         },
         "exclude-from-classmap": [
-            "/Tests/"
+            "/Tests/",
+            "/Legacy/"
         ]
     },
     "autoload-dev": {
         "psr-4": {
-            "Omniauth\\Passkey\\Tests\\": "Tests/"
+            "Omniauth\\WebAuthn\\Tests\\": "Tests/"
         }
     },
     "extra": {

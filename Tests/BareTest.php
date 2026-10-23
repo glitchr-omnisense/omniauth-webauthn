@@ -1,13 +1,13 @@
 <?php
 
-namespace Omniauth\Passkey\Tests;
+namespace Omniauth\WebAuthn\Tests;
 
 use Omniauth\Omniauth;
-use Omniauth\Passkey\PasskeyMethod;
+use Omniauth\WebAuthn\PasskeyMethod;
 use PHPUnit\Framework\TestCase;
 
 /**
- * omniauth/passkey with no framework: in PHP processes of their own (this
+ * omniauth/webauthn with no framework: in PHP processes of their own (this
  * one has loaded PHPUnit), a whole registration and sign-in by hand, and
  * every class of the package loaded. Nothing may come from outside but
  * omniauth, webauthn-lib and what it requires - its CBOR, COSE and PKI
@@ -41,11 +41,11 @@ final class BareTest extends TestCase
 
     public function testEveryClassLoadsWithTheRequiredPackagesAlone(): void
     {
-        $report = self::php([__DIR__.'/Fixtures/load-all.php', self::autoload(), \dirname(__DIR__), 'Omniauth\Passkey']);
+        $report = self::php([__DIR__.'/Fixtures/load-all.php', self::autoload(), \dirname(__DIR__), 'Omniauth\WebAuthn']);
 
         self::assertContains(PasskeyMethod::class, $report['loaded']);
-        self::assertContains('Omniauth\Passkey\Testing\SoftwareAuthenticator', $report['loaded']);
-        self::assertContains('Omniauth\Passkey\PasskeyRecord', $report['loaded']);
+        self::assertContains('Omniauth\WebAuthn\Testing\SoftwareAuthenticator', $report['loaded']);
+        self::assertContains('Omniauth\WebAuthn\PasskeyRecord', $report['loaded']);
         self::assertSame([], self::foreign($report['symbols']));
         self::assertSame([], self::outside($report['files'], $report['eager']));
     }
@@ -57,7 +57,7 @@ final class BareTest extends TestCase
         if (!class_exists($bundle)) {
             self::markTestSkipped('web-auth/webauthn-symfony-bundle is not installed.');
         }
-        $report = self::php([__DIR__.'/Fixtures/load-all.php', self::autoload(), \dirname(__DIR__), 'Omniauth\Passkey', $bundle]);
+        $report = self::php([__DIR__.'/Fixtures/load-all.php', self::autoload(), \dirname(__DIR__), 'Omniauth\WebAuthn', $bundle]);
 
         self::assertContains($bundle, self::foreign($report['symbols']));
         self::assertNotEmpty(preg_grep('~/webauthn-symfony-bundle/|/doctrine/dbal/~', self::outside($report['files'], $report['eager'])));
@@ -95,7 +95,7 @@ final class BareTest extends TestCase
                 return $vendor.'/autoload.php';
             }
         }
-        self::markTestSkipped('No autoloader knows omniauth/passkey\'s tests.');
+        self::markTestSkipped('No autoloader knows omniauth/webauthn\'s tests.');
     }
 
     /** @return array<string, mixed> */

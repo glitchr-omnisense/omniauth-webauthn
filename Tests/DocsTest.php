@@ -1,6 +1,6 @@
 <?php
 
-namespace Omniauth\Passkey\Tests;
+namespace Omniauth\WebAuthn\Tests;
 
 use PHPUnit\Framework\TestCase;
 
@@ -14,7 +14,7 @@ final class DocsTest extends TestCase
         $autoload = \dirname((string) (new \ReflectionClass(\Composer\Autoload\ClassLoader::class))->getFileName(), 2).'/autoload.php';
         $code = str_replace("require 'vendor/autoload.php';", 'require '.var_export($autoload, true).';', $block[1], $replaced);
         self::assertSame(1, $replaced);
-        $script = tempnam(sys_get_temp_dir(), 'omniauth-passkey-docs');
+        $script = tempnam(sys_get_temp_dir(), 'omniauth-webauthn-docs');
         file_put_contents($script, $code);
         try {
             $process = proc_open([\PHP_BINARY, $script], [1 => ['pipe', 'w'], 2 => ['pipe', 'w']], $pipes);

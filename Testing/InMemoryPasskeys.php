@@ -1,10 +1,10 @@
 <?php
 
-namespace Omniauth\Passkey\Testing;
+namespace Omniauth\WebAuthn\Testing;
 
 use Omniauth\Contract\Accounts;
-use Omniauth\Passkey\Contract\Passkeys;
-use Omniauth\Passkey\PasskeyRecord;
+use Omniauth\WebAuthn\Contract\Passkeys;
+use Omniauth\WebAuthn\PasskeyRecord;
 
 /** The passkeys in memory, by credential id: tests, the harness's bare script, a first try in plain PHP. */
 final class InMemoryPasskeys implements Passkeys
