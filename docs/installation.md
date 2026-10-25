@@ -3,7 +3,7 @@ title: Installation
 order: 10
 ---
 
-## Installation
+# Installation
 
 ```sh
 composer require omniscient/omniauth omniauth/webauthn
