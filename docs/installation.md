@@ -1,9 +1,9 @@
 ---
 title: Installation
-order: 1
+order: 10
 ---
 
-# Installation, in plain PHP
+## Installation
 
 ```sh
 composer require omniscient/omniauth omniauth/webauthn
@@ -72,4 +72,11 @@ the settings page, and on `Authenticated` renews its session id and keeps the ac
 No second factor follows a passkey (Marco's decision QA1): user verification is required at every
 ceremony - the device, and the gesture or the code that unlocks it.
 
-Next: [the method](passkey.md), [the records and the bundle](records.md).
+Run in omniauth's harness on 2026-10-25 (the block as it is, `Tests/DocsTest.php`), it prints:
+
+```
+registered
+authenticated as ringo by passkey
+```
+
+Next: [the method](webauthn.md), [the records and the bundle](records.md).

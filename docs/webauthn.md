@@ -1,9 +1,9 @@
 ---
 title: The method
-order: 2
+order: 30
 ---
 
-# The method
+## The method
 
 ```php
 new PasskeyMethod(
@@ -22,7 +22,7 @@ new PasskeyMethod(
 A first factor. No second factor follows it (QA1): user verification is required at every
 ceremony.
 
-## Signing in
+### Signing in
 
 | Step | Call | Gives | Keeps in the attempt |
 |---|---|---|---|
@@ -34,14 +34,14 @@ proof itself. The passkey is found by its id (`Passkeys::byCredentialId(base64)`
 its user handle (`Accounts::byHandle()`); after the check, `Passkeys::used()` receives the record
 with its counter and backup flags moved.
 
-## Registering, from the settings
+### Registering, from the settings
 
 | Step | Call | Gives |
 |---|---|---|
 | options | `$omniauth->enrol(Factor::Passkey, $account)->begin($context)` | `Challenge::json()`: `rp`, `user` (id: the handle, name: the identifier, displayName), `challenge`, `pubKeyCredParams` (ES256, RS256), `authenticatorSelection` (verification and resident key required), `attestation: "none"`, `excludeCredentials` (the account's passkeys) |
 | attestation | `->confirm($context, ['json' => $posted, 'label' => '...'])` | `Enrolled`: done, or failed with its reason; the record added by `Passkeys::add($account, $record, $label)` |
 
-## Refusals
+### Refusals
 
 | Failure | Reason | When |
 |---|---|---|
@@ -55,7 +55,7 @@ with its counter and backup flags moved.
 
 The conductor throttles both steps (`passkey`, `passkey.begin`) like every method.
 
-## What the host does
+### What the host does
 
 Send `Challenge::$payload` as it is (the bridges wrap it as web-auth/webauthn-symfony-bundle did,
 `status: "ok"`, `errorMessage: ""`, so `assets/security/webauthn.js` stays as it is); post the

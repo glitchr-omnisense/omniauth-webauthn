@@ -1,9 +1,9 @@
 ---
 title: The records and the bundle
-order: 3
+order: 35
 ---
 
-# The records and web-auth/webauthn-symfony-bundle
+## The records and web-auth/webauthn-symfony-bundle
 
 A `PasskeyRecord` is a passkey as omnibase's `userPasskey` table holds it: the 13 fields of
 webauthn-lib's `CredentialRecord`, under the same names, in the values of the columns.
@@ -35,7 +35,7 @@ $record = PasskeyRecord::fromCredentialRecord($credential);   // as PasskeyRepos
 An application on Doctrine (omnibase) maps its entity's fields instead: the entity holds the bytes
 (its `passkey_base64` type decodes them), so its store gives `base64_encode()` of them.
 
-## Both ways
+### Both ways
 
 So that the switch from the bundle (lesringostars at step AU7, then every site) loses no passkey,
 `Tests/BundleCompatibilityTest` checks:

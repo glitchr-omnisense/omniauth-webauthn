@@ -99,8 +99,9 @@ composer remove omniauth/passkey && composer require omniauth/webauthn
 
 ## Documentation
 
+- [Overview](docs/index.md): options, capabilities, what a ceremony checks, the hosts' keys, errors
 - [Installation, in plain PHP](docs/installation.md)
-- [The method](docs/webauthn.md)
+- [The method](docs/webauthn.md): signing in, registering, refusals
 - [The records and the bundle](docs/records.md)
 
 ## Verified, and not
