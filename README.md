@@ -1,6 +1,6 @@
 # omniauth/webauthn
 
-WebAuthn - passkeys - for [omniscient/omniauth](https://github.com/glitchr-studio/omniauth), **under any PHP
+WebAuthn - passkeys - for [omnisense/omniauth](https://github.com/glitchr-omnisense/omniauth), **under any PHP
 host**, over web-auth/webauthn-lib: the sign-in (request options, then the assertion checked) and
 the registration from an account's settings (creation options, then the attestation checked), on
 the credential record as omnibase's `userPasskey` table holds it - so a passkey registered by
@@ -30,7 +30,7 @@ $options = $enrolment->begin($context);                    // the JSON for parse
 $enrolment->confirm($context, ['json' => $posted, 'label' => 'MacBook Touch ID']);
 ```
 
-It requires omniscient/omniauth and web-auth/webauthn-lib ^5.3 - framework-free, with its CBOR,
+It requires omnisense/omniauth and web-auth/webauthn-lib ^5.3 - framework-free, with its CBOR,
 COSE and PKI libraries and the standalone Symfony components it is written on (serializer,
 property-info, property-access, string, uid, clock). No bundle, no kernel, no container.
 

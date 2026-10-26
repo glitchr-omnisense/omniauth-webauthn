@@ -1,6 +1,6 @@
 # omniauth/webauthn
 
-Passkeys (WebAuthn) as a first factor of [omniscient/omniauth](https://github.com/glitchr-studio/omniauth),
+Passkeys (WebAuthn) as a first factor of [omnisense/omniauth](https://github.com/glitchr-omnisense/omniauth),
 under any PHP host, over web-auth/webauthn-lib 5: the request and creation options a page's script
 hands the browser, and the assertion and attestation the browser posts back, checked by
 webauthn-lib with nothing turned off. User verification is required at every ceremony, so no second
@@ -21,10 +21,10 @@ The factor keeps its name, `passkey` (`Factor::Passkey`).
 ## Installation
 
 ```sh
-composer require omniscient/omniauth omniauth/webauthn
+composer require omnisense/omniauth omniauth/webauthn
 ```
 
-Requires PHP 8.2 with `ext-openssl`, `omniscient/omniauth` (1.x), `web-auth/webauthn-lib` (^5.3),
+Requires PHP 8.2 with `ext-openssl`, `omnisense/omniauth` (1.x), `web-auth/webauthn-lib` (^5.3),
 `symfony/serializer` and `symfony/uid` (6.4, 7 or 8: standalone components, webauthn-lib's own
 ground). No framework. Under omnibridge/symfony and omnibridge/laravel the `passkey` key turns it on
 ([Hosts](#hosts)).

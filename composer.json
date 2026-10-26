@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Omniauth's WebAuthn over web-auth/webauthn-lib, under any PHP host - passkeys: the sign-in (request options, then the assertion checked: origin, relying party, user verification required, counter and backup flags kept) and the registration (creation options, then the attestation checked), on the credential record as omnibase's userPasskey table holds it - the 13 fields of WebAuthn's CredentialRecord, in their base64 text - so a passkey registered by web-auth/webauthn-symfony-bundle signs in here and one registered here is read by the bundle. A software authenticator (P-256) signs real assertions in tests. Formerly omniauth/passkey, which it replaces (the Omniauth\\Passkey\\ names stay aliases for one release).",
     "keywords": ["authentication", "sign-in", "passkey", "webauthn", "fido2", "framework-agnostic", "omniauth"],
-    "homepage": "https://github.com/glitchr-studio/omniauth-webauthn",
+    "homepage": "https://github.com/glitchr-omnisense/omniauth-webauthn",
     "license": "MIT",
     "authors": [
         {
@@ -14,7 +14,7 @@
     "require": {
         "php": ">=8.2",
         "ext-openssl": "*",
-        "omniscient/omniauth": "^1.0@dev",
+        "omnisense/omniauth": "^1.0@dev",
         "symfony/serializer": "^6.4|^7.0|^8.0",
         "symfony/uid": "^6.4|^7.0|^8.0",
         "web-auth/webauthn-lib": "^5.3"

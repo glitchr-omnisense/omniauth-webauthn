@@ -6,10 +6,10 @@ order: 10
 # Installation
 
 ```sh
-composer require omniscient/omniauth omniauth/webauthn
+composer require omnisense/omniauth omniauth/webauthn
 ```
 
-It requires omniscient/omniauth and web-auth/webauthn-lib (framework-free: its CBOR, COSE and PKI
+It requires omnisense/omniauth and web-auth/webauthn-lib (framework-free: its CBOR, COSE and PKI
 libraries, and the standalone Symfony components it is written on - serializer, property-info,
 uid, clock). No bundle, no framework: the passkeys stay in your table, behind
 `Omniauth\WebAuthn\Contract\Passkeys`, as `PasskeyRecord` values - the 13 fields of WebAuthn's
