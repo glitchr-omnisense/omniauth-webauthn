@@ -20,7 +20,7 @@ use PHPUnit\Framework\TestCase;
 final class BareTest extends TestCase
 {
     private const FOREIGN = '~^(?:Symfony\\\\(?!Component\\\\(?:PasswordHasher|Serializer|PropertyInfo|PropertyAccess|Uid|Clock|TypeInfo|String)\\\\|Polyfill\\\\)|Webauthn\\\\Bundle\\\\|Doctrine\\\\(?!Deprecations\\\\)|(?:Illuminate|Laravel|Twig|Scheb|Lcobucci|OTPHP|League|Omnibridge|Base|App)\\\\)~';
-    private const ALLOWED_FILES = '~/vendor/(?:psr/[\w-]+|symfony/(?:password-hasher|serializer|property-info|property-access|uid|clock|type-info|string|polyfill-[\w-]+|deprecation-contracts)|web-auth/(?:webauthn-lib|cose-lib)|spomky-labs/(?:cbor-php|pki-framework)|brick/math|paragonie/constant_time_encoding|phpdocumentor/[\w-]+|phpstan/phpdoc-parser|webmozart/assert|doctrine/deprecations|composer)/|/vendor/autoload\.php$~';
+    private const ALLOWED_FILES = '~/vendor/(?:omnisense/contracts|psr/[\w-]+|symfony/(?:password-hasher|serializer|property-info|property-access|uid|clock|type-info|string|polyfill-[\w-]+|deprecation-contracts)|web-auth/(?:webauthn-lib|cose-lib)|spomky-labs/(?:cbor-php|pki-framework)|brick/math|paragonie/constant_time_encoding|phpdocumentor/[\w-]+|phpstan/phpdoc-parser|webmozart/assert|doctrine/deprecations|composer)/|/vendor/autoload\.php$~';
 
     public function testARegistrationAndASignInByHandLoadNothingElse(): void
     {
@@ -78,7 +78,7 @@ final class BareTest extends TestCase
      */
     private static function outside(array $files, array $eager): array
     {
-        $roots = [realpath(\dirname(__DIR__)).'/', realpath(\dirname((string) (new \ReflectionClass(Omniauth::class))->getFileName())).'/'];
+        $roots = [realpath(\dirname(__DIR__)).'/', realpath(\dirname((string) (new \ReflectionClass(Omniauth::class))->getFileName())).'/', realpath(\dirname((string) (new \ReflectionClass(\Omnisense\Contracts\Exception\ExceptionInterface::class))->getFileName(), 2)).'/'];
         $eager = array_map('dirname', array_filter($eager));
 
         return array_values(array_filter($files, static fn (?string $file) => null !== $file

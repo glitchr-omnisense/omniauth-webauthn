@@ -1,0 +1,38 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "webauthn",
+    "rateLimits": [],
+    "concurrency": null,
+    "rights": {
+        "commercial": "allowed",
+        "openSourceRequired": false,
+        "caching": {
+            "permission": "allowed",
+            "maxTtl": null
+        },
+        "storage": "allowed",
+        "redistribution": "allowed",
+        "attribution": {
+            "required": false,
+            "text": null,
+            "url": null,
+            "where": []
+        },
+        "licence": "MIT"
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://github.com/web-auth/webauthn-framework/blob/5.3.x/LICENSE",
+        "policy": null,
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": null,
+        "notes": "No third party: the passkeys are registered and checked on the site's server (WebAuthn, over web-auth/webauthn-lib, MIT) against the browser's authenticator; attestation 'none', so no metadata service (FIDO MDS) is fetched and nothing is called: no rate limit ([]), no key. The licence is the library's (MIT, its notice kept in vendor/ as Composer installs it). This file limits nothing; a sign-in's tries are omniauth's Throttle."
+    }
+}
