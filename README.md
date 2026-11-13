@@ -6,6 +6,12 @@ the registration from an account's settings (creation options, then the attestat
 the credential record as omnibase's `userPasskey` table holds it - so a passkey registered by
 web-auth/webauthn-symfony-bundle signs in here, and one registered here is read by the bundle.
 
+```sh
+composer require omnisense/omniauth omniauth/webauthn
+```
+
+No account anywhere: the relying party is the site itself, the passkeys the browser's.
+
 ```php
 use Omniauth\{ArrayState, Context, Factor, Omniauth};
 use Omniauth\Method\Methods;
